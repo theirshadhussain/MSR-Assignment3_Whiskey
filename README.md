@@ -25,7 +25,7 @@ Used GitHub REST API version 3, [REST API GITHUB](https://developer.github.com/v
 
 Paper Code Repo: https://github.com/melkor54248/RepoSkillMiner
 
-Our Git Project: https://github.com/theirshadhussain/Identifying-GitHub-Expertise-Using-NLP
+Our Git Project: [https://github.com/theirshadhussain/MSR-Assignment3_Whiskey](https://github.com/theirshadhussain/MSR-Assignment3_Whiskey)
 
 ### Output data: 
 Evaluate Precision, Recall and F-measures for the derived technologies, by conducting a test in LUIS and reporting the results.
@@ -36,25 +36,39 @@ The   file contains calculated metrics on the results obtained.
 
 ### Process delta:
 Our reproduction process differs from the process followed in the paper in the following ways:
-- While training and testing LUIS, we have used SQL and Pyspark whereas in the paper they have used Linq, Entity Framework, Async Programming, Angular, and React. This is because we wanted to compare the precision, recall, and F-measure values for different technologies and validate this part of the paper.
-- We have used the single testing panel instead of the batch testing panel. This is because we wanted to check the individual lines of code where we get high intent score and analyze them.
+- While training and testing LUIS, we have used SQL and Pyspark whereas in the paper they have used Linq, Entity Framework, Async Programming, Angular, and React. This is because we wanted to compare the precision, recall, and F-measure values of identification for different technologies especially which have similar syntaxes.
+- We have used the single testing panel instead of the batch testing panel. This is because we wanted to check the results for individual lines of code and analyze them.
 
 ### Output delta :
-Our output metrics are lot different than the output of the paper. They have got quite high metrics of precision, recall and f-score. But we did not get such high metrics in case of the technologies we have used. Precision is quite high for pyspark and low for SQL (0.88, 0.64 respectively), recall is very high for SQL and very low for pyspark (1, 0.5 respectively) and f-score is again high for SQL and low for pyspark (0.78, 0.64 respectively). We have also tested comments and other languages to check for 'none' and the metrics of 'none' are - precision = 0.42, recall = 0.36, f1 score = 0.39. Hence the metrics are very low in case of 'none' this is because other languages and comments have been wrongly judged as 'sql' and 'pyspark' by LUIS. Hence our hypothesis of 'Is there a bias in identifying the technology from commit files?' yields a 'yes' and our other hypothesis of 'Will the programming language present in the commit files affect the process of identification of technologies present in it?' also yields a 'yes'.
+Our output differs from what is described in the paper as the technologies we chose, produces less accuracy scores.
+- Precision for pyspark is higher than for SQL (0.88, 0.64 respectively) 
+- Recall for SQL is higher than for pyspark (1, 0.5 respectively)
+- f-score for SQL is higher than for pyspark (0.78, 0.64 respectively). 
+
+The metrics for classifying comments and other languages as 'none' also have less scores. (precision = 0.42, recall = 0.36, f1 score = 0.39)
+Note: The reasons for such low scores of the model overall are having similarities between syntaxes and the relevance of comments to the queries.
+
+Hence the the following Threats to Validity are evident by the results:
+- 'Bias in identification of similar technologies from the commit files'
+- 'Affect of the programming language present in the commit files on the identification of the technologies'
 
 ## MSR study enhancement:
 
-- **Threat** — When the training dataset has similar codes and comments, it results in less accuracy score as the model cannot classify accurately
+- **Threat** — We have identified two threats to validity:
+- When the technologies being trained have similar syntax the metric scores can be low. 
+- Presence of programming language in the commit file can deviate the metric score of the intents.
 
-- **Traces** — In the paper it is mentioned that  "We evaluate the precision, recall and f-measure for the derived technologies/frameworks, by conducting a batch test in LUIS and report the results". It could be a threat while evaluating as not all repositories are unbiased.
+- **Traces** — In the paper it is mentioned that  "We evaluate the precision, recall and f-measure for the derived technologies/frameworks, by conducting a batch test in LUIS and report the results". It could be a threat while evaluating as not all repositories are unbiased. Also, "We have created 98 example utterances for the 5 intents using existing or slightly altered existing samples from the official Microsoft, Angular and React documentation". In the last assignment, when we reproduced the paper we assumed that in case of similar technologies using more example utterances can help to yield high metric values. So we have considered using more example utterances to check if that works or not.
 
-- **Theory** — We think this is a threat as when trained with technologies as Pyspark, sql that are similar to each other combined with comments in the scripts, The evaluation is effected based on the training dataset making the model misclassify and produce less accurate results.
+- **Theory** — We think these are threats because:
+-  Training technologies with different syntax may yield high metric values(as in the paper), but when trained with technologies with similar syntax the metric scores were low during the Reproduction of the paper (assignment 2). Hence there is a bias in the identification of technologies and thus the model can misclassify or produce less accurate results.
+-   We know that the commit files contain not just the technologies but also programming languages. The presence of programming languages in the commit files being tested can manipulate the results.
 
-- **Methodology** — We plan to train model with  pyspark and sql repositories having lots of comments and test them in LUIS to get precision, recall and f-score.
+- **Methodology** — We plan to train model with  pyspark and sql repositories having lots of comments and test them in LUIS with code chunks of SQL, Pyspark, comments and also other programming languages (classify as 'none') to get precision, recall and f-score. This is to check if the threat still exists with the large training dataset.
 
 - **Feasibility** — We would like to skip the part of showing the result in the software RepoSkillMiner as it might take more time to code an entire software and concentrate on evaluation of model trained in LUIS.
 
-- **Process** — We have trained LUIS with not just SQL and Pyspark but also alot of comments. After the training is done, we test using single panel testing instead of batch testing and calculate the precision, recall and f-score for the results. We tested using not just SQL, Pyspark but also comments, other languages like Java, C, HTML, javascript and so on to check if the output shows 'none' or not. We not only tested and calculated the metrics but also observed and analyzed the test cases when the output is wrong or less accurate. We tried to analyze when and why the result is wrong.   
+- **Process** —   We have trained LUIS with not just SQL and Pyspark but also alot of comments. After the training is done, we test using single panel testing instead of batch testing and calculate the precision, recall and f-score for the results. We tested using not just SQL, Pyspark but also comments, other languages like Java, C, HTML, javascript and so on to check if the output shows 'none' or not. We not only tested and calculated the metrics but also observed and analyzed the test cases when the output is wrong or less accurate. We tried to analyze when and why the result is wrong.   
 
 - **Data** — We have trained LUIS with alot of SQL, Pyspark and also alot of comments. Other than this we have also used example codes from different languages to test for the result 'none'.
 
