@@ -1,0 +1,1390 @@
+{
+  "luis_schema_version": "7.0.0",
+  "intents": [
+    {
+      "name": "None",
+      "features": []
+    },
+    {
+      "name": "Pyspark",
+      "features": []
+    },
+    {
+      "name": "SQL",
+      "features": []
+    }
+  ],
+  "entities": [],
+  "hierarchicals": [],
+  "composites": [],
+  "closedLists": [],
+  "prebuiltEntities": [],
+  "utterances": [
+    {
+      "text": ", pyspark.sql.dataframe.sampleby()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": ".config (\"spark.sql.execution.arrow.enabled\", \"true\")",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": ".config (\"spark.sql.shuffle.partitions\", \"50\")",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": ".config(\"spark.driver.maxresultsize\",\"5g\")",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": ".getorcreate()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "''' changing pandas to pyspark dataframes'''",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "'''creating database'''",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "# create sparksession from builder import pyspark from pyspark.sql import sparksession spark = sparksession.builder.master(\"local[1]\") \\ .appname('sparkbyexamples.com') \\ .getorcreate()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "#show all entries in title column",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "add 10math class male named thomas nelson , 9bio class female named sally allen and 11his class female named linda sandra in one question",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "add a random student in the students chart to the writers chart as an authors",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "add the genre of biography to the genre table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "add the writer named cindy brown and make him write his writer number (note: the last increased rate in automatic enhancing is hold in @@identity factor)",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "add the writer named smith allen to the authors table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "alter table employee add (address varchar2(50));",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "alter table employee change (phone_no) (contact_no);",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "alter table employee drop column age;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "ataframe_remove2 = dataframe .drop(dataframe.publisher).drop(dataframe.published_date).show(5)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "ataframe.filter(dataframe[\"title\"] == 'the host').show(5)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "change the class of the student whose school number is 3 from 10bio to 10his",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "computes summary statistics",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "connect to the spark session",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "converting dataframe into a rdd of string",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "converting dataframe into an rdd",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "counts the number of distinct rows in dataframe",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "counts the number of rows in dataframe",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "create role user_1;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "create session in spark",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "create table \"employees\" ( \"id\" int(11) not null auto_increment, \"shop_id\" int(11) default null, \"gender\" enum('m','f') default null, \"name\" varchar(32) default null, \"salary\" int(11) default null, primary key (\"id\") ) auto_increment=6;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "create table <table_name> ( column_name1 datatype, column_name2 datatype, . . . column_name_n datatype );",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "create table authors (author_name varchar(60), author_email varchar(70), author_pay int);",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "create table employee ( empid int, ename char, age int, city char(25), phone_no varchar(20) );",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "create table loan_034( loan_no varchar(25) primary key, name varchar(25), amount integer(10), ap_date date );",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "create trigger dml_trigger on dbo.books_audit_table after insert as raiserror ('please do not forget to current book status !!', 16,10);",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "create trigger logon_trigger on all server after logon as print 'logon trigger has been activated!' rollback;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "create trigger security on database for create_table,alter_table,drop_table as print 'security trigger for data definition language commands has been activated!' rollback;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "created spark session with pyspark",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "creating data frames",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "data = song_spotify.union(song_spotify).repartition('energy')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "datacollect = deptdf.collect()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe [dataframe.author.isin(\"john sandford\", \"emily giffin\")].show(5)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe = dataframe.withcolumn('new_column', f.lit('this is a new column'))",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe = dataframe.withcolumnrenamed('amazon_product_url', 'url')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe = sc.read.json('dataset/nyt2.json')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe with 1 partition",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "dataframe with 10 partitions",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "dataframe_csv = sc.read.csv('csv_data.csv')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe_parquet = sc.read.load('parquet_data.parquet')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe_remove = dataframe.drop(\"publisher\", \"published_date\").show(5)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe_txt = sc.read.text('text_data.txt')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.coalesce(1).rdd.getnumpartitions()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.columns",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.count()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.describe().show()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.distinct().count() (",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.dropduplicates()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.dropna()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.dtypes",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.explain()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.fillna()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.first()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.groupby(\"author\").count().show(10)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.head()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.na.fill()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.na.replace(5, 15)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.registertemptable(\"df\")",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.repartition(10).rdd.getnumpartitions()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.replace()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.select(\"author\", \"title\", \"rank\", \"description\") \\ .write \\ .save(\"rankings_descriptions.parquet\")",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.select(\"author\", \"title\", \"rank\", \"price\").show(10)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.select(\"author\", \"title\", dataframe.title.endswith(\"nt\")).show(5)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.select(\"author\", \"title\", dataframe.title.startswith(\"the\")).show(5)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.select(\"author\").show(10)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.select(\"title\",when(dataframe.title != 'odd hours', 1).otherwise(0)).show(10)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.select(dataframe.author.substr(1, 3).alias(\"title\")).show(5)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.select(dataframe.author.substr(1, 6).alias(\"title\")).show(5)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.select(dataframe.author.substr(3, 6).alias(\"title\")).show(5)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.show()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.show(10)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.take(5)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.tojson().first()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframe.topandas()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframenafunctions.drop()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframenafunctions.fill()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dataframenafunctions.replace()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dbs = spark.catalog.listdatabases()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "def parseneigbors1(urls): parts = re.split(r',',urls) return parts[0],parts[1]",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "def parseneighbors(urls): parts = re.split(r',', urls) return parts[0],int(parts[2])/int(parts[3])",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "delete from customers where store_state = 'mh' and customer_id = '1001';",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "delete the author #25",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "deleting columns",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "deleting rows",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "deptdf = spark.createdataframe(rdd, schema = deptcolumns)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "df = rdd.todf()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "df = spark.sql('''select 'spark' as hello ''')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "df_ppl.printschema()",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "df.select(collect_list('salary')).show(truncate=false)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "df2 = spark.sql('select _1,_2 from sample_table')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "displays the content of dataframe",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "drop database employees;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "drop table employee;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "drop trigger [logon_trigger] on all server;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "drop trigger [security] on database;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "elect [businessentityid] ,[firstname] ,[lastname] ,[modifieddate] from [person].[person] where year([modifieddate]) = 2011;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "elect * from students order by class;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "elect employee.id, employee.first_name, employee.last_name, sum(datediff(\"second\", call.start_time, call.end_time)) as call_duration_sum from call inner join employee on call.employee_id = employee.id group by employee.id, employee.first_name, employee.last_name order by employee.id asc;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "elect top(15) percent [businessentityid] ,[firstname] ,[lastname] ,[modifieddate] from [person].[person];",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "end spark session",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "exit",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "f __name__ == \"__main__\": if len(sys.argv) != 4: print(\"usage: pagerank <number_iterations> <rank_weights>\", file=sys.stderr) sys.exit(-1)",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "filtering entries of title # only keeps records having value 'the host'",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "find the employee_id, salary, and highest qualification of employees who earn equal to all the managers in the company’s new york office.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "find the employee_ids and salaries of employees who earn less than or equal to all the employees in the ‘d003’ department.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "for i in range(len(z)): u=u+float(z[i]) if(u>1): return float(u) else: return 1.0",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "for inf in glob(mol_pattern):",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "from operator import add",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "from pyspark.context",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "from pyspark.sql import sparksession",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "from pyspark.sql.functions",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "from random import random",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "from spark data sources",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "grant all privileges on sales_details to user_1;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "group by author, count the books of the authors in the groups",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "group by other_counts",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "if __name__ == \"__main__\": if len(sys.argv) != 4: print(\"usage: pagerank <file> <iterations> <weights>\", file=sys.stderr) sys.exit(-1)",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "if exists (select * from sys.triggers where object_id = object_id(n'[dbo].[dml_trigger]')) drop trigger [dbo].[dml_trigger] go",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "if(int(sys.argv[3])==0): first=0.80 second=0.20",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "import *from pyspark.sql.types",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "import sparkcontext",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "increase all of the students’ score by 5 points",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "initializing sparksession",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "insert into [sales].[currency] values ('mss', 'sql dollars', getdate());",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "insert into customers values ('1006','2020-03-04',3200,'dl', '1008');",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "insert into destination_table (column_list, …) select column_list from source_table where condition;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "insert into employees values (6, 3, 'm', 'al bundy', 1000);",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "insert into public.customers( customer_id, sale_date, sale_amount, salesperson, store_state, order_id) values (1005,'2019-12-12',4200,'r k rakesh','mh','1007');",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "insert into table_name (column_name_1, column_name_2, column_name_3, ...) values (value1, value2, value3, ...)",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "insert into table_name values (column_values);",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "jgw = launch_gateway(none) jvm = jgw.jvm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list all the records in the student chart select * from students",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list the gender female (f) records in the student table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list the nam,e surname and class of the student in the student table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list the name ,surname and the dates of received books of the student",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list the names of each class in the way of being seen once in the student table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list the names, surnames and classes of the students in the class 10math or 10sci in the student table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list the students name and surname by combining them as name surname in the student table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list the students name surname and school number in the student table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list the students whose birth dates are null",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list the students with female gender and the class 10math in the student table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list the students with the names starting with “a” letter in the student table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list_p = [('john',19),('smith',29),('adam',35),('henry',50)]",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "load data into table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\",",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "mol_pattern = '/home/emountjoy_statgen/data/sumstats/molecular_trait/*.parquet'",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "mport tempfile import getpass",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "nsert statement for inserting records in departments table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "number=rdd.getnumpartitions()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "obtaining contents of df as pandas",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "partions = spark.conf.get('spark.sql.shuffle.partitions')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "pdate employees set salary=null where id=2;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "prepare a summary table consisting of total employees and average salaries grouped together by highest qualification, provided that salaries of these employees is more than the average salary of all the departments.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "print sschema of employee table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "print('%i ' % (num))",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "print(df.sample(0.06).collect())",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "prints plans including physical and logical",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "pulling data from multi table working questions (without using join)",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "pyspark.sql import sparksession",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "pyspark.sql.dataframe.sample()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "pyspark.sql.dataframe.sampleby()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "rdd_convert = dataframe.rdd",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "rdd.map(lambda x: row(name=x[0], age=int(x[1])))",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "rdd.sample()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "rdd.takesample()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "rdd=spark.sparkcontext.parallelize(data)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "rdd2 = rdd.flatmap(lambda x: x.split(\" \"))",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "rdd3 = spark.sparkcontext.wholetextfiles('/path/textfile.txt')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "registering a table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "reparrdd = rdd.repartition(4)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "replacing null values",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "retrieving alll tables in the database",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "return first n rows",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "return key,1",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "return new dataframe replacing one value with another",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "returning new dataframe restricting rows with null",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "returns columns of dataframe",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "returns dataframe column names and data types",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "returns first row",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "revoke delete, truncate on sales_details from user_1;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "revoke select, insert on sales_details from user_1; output:",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "revoke trigger, references on sales_details from user_1;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "revoke update on sales_details from user_1;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "rint(df2.sampleby(\"key\", {0: 0.1, 1: 0.2},0).collect())",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "sample(withreplacement, fraction, seed=none)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "sampleby(col, fractions, seed=none)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "sc = sparksession.builder.appname(\"pysparkexample\")",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "sc.addfile(url)",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sc.sql(\"select case when description like '%love%' then 'love_theme' when description like '%hate%' then 'hate_theme' when description like '%happy%' then 'happiness_theme' when description like '%anger%' then 'anger_the' when description like '%horror%' then 'horror_theme' when description like '%death%' then 'criminal_theme' when description like '%detective%' then 'mystery_theme' else 'other_themes' end themes from df\").groupby('themes').count().show()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "sc.stop()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "select [businessentityid] ,[firstname] ,[lastname] ,[modifieddate] from [person].[person] where [businessentityid] < 130;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select [businessentityid] ,[firstname] ,[lastname] ,[modifieddate] from [person].[person] where [businessentityid] = 130;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select [businessentityid] ,[firstname] ,[lastname] ,[modifieddate] from [person].[person] where [businessentityid] > 130;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select [businessentityid] ,[firstname] ,[lastname] ,[modifieddate] from [person].[person] where [firstname] = 'rob' and year([modifieddate]) = 2011;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select [businessentityid] ,[firstname] ,[lastname] ,[modifieddate] from [person].[person] where [firstname] = 'rob';",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select [businessentityid] ,[firstname] ,[lastname] ,[modifieddate] from [person].[person] where [firstname] like 'rob%';",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select [businessentityid], [persontype], [namestyle] from [person].[person]",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select [businessentityid],[persontype], [namestyle] from [person].[person];",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select [firstname] ,count(1) as rowcnt from [person].[person] where [firstname] like 'rob%' group by [firstname] having count(1) >= 20;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select [firstname] ,count(1) as rowcnt from [person].[person] where [firstname] like 'rob%' group by [firstname];",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select [productsubcategorykey] ,[englishproductsubcategoryname] ,[productcategorykey] from [adventureworksdw2017].[dbo].[dimproductsubcategory] where [productcategorykey] in (1,2);",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from [person].[person]",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from [person].[person] inner join [humanresources].[employee] on [employee].[businessentityid] = [person].[businessentityid];",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from [person].[person] p inner join [humanresources].[employee] e on e.[businessentityid] = p.[businessentityid];",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from [person].[person] where businessentityid = 7",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from [person].[person] where businessentityid = 7;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from [person].[person] where firstname = 'gail'",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from [person].[person];",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from loan_034 where upper (name) like ‘%m%’;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from loan_034 where upper (name) like ‘%park%’;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from loan_034 where upper (name) like ‘a%’ or upper (name) like ‘k%’ or upper (name) like ‘%a’;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from loan_034 where upper (name) like ‘don%’;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from loan_034 where upper (name) like ‘h%h’;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from loan_034 where upper (name) like ‘r_m’;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from loan_034 where upper (name) like ‘r%’;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from loan_034 where upper (name) like upper (‘cha_’) or upper (name) like upper (‘chan_’);",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from students where name like '[adk]%';",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select all data from pyspark table",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "select businessentityid, firstname, lastname, modifieddate from [person].[person] order by [modifieddate] asc;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select businessentityid, firstname, lastname, modifieddate from [person].[person];",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select c.last_name as lname, t.name as city from customer as c inner join city as t on c.id = t.customer_id;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select column1, column2 from schema.table",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select column1, column2, … from <tablename> where <boolean expression>;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select column1, column2, column3, … from <tablename> order by columnx asc | desc",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select concat (name, ‘,’ category) from tab;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select count(1) as rowcnt from [person].[person];",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select e.nationalidnumber,e.jobtitle, p.firstname, p.lastname from [humanresources].[employee] as e inner join [person].[person] as p on e.businessentityid = p.businessentityid;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select employee.id, employee.first_name, employee.last_name, avg(datediff(\"second\", call.start_time, call.end_time)) as call_duration_avg from call inner join employee on call.employee_id = employee.id group by employee.id, employee.first_name, employee.last_name order by employee.id asc; -- average call duration - all calls select avg(datediff(\"second\", call.start_time, call.end_time)) as call_duration_avg from call;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select firstname, lastname from [person].[person] where lastname like '%l'",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select id, name, salary from customers;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select last_name from customer union all select last_name from employee;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select name, color from clothing where color is not null;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select name,surname,class,gender from students where (class='9math' and gender='m') or (class='9his' and gender='f');",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select p.[firstname] ,count(1) as rowcnt from [person].[person] p inner join [humanresources].[employee] e on e.[businessentityid] = p.[businessentityid] where p.[firstname] like 'rob%' group by [p].[firstname] order by [rowcnt] asc;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select p.[firstname] ,p.[lastname] ,p.[businessentityid] ,e.[businessentityid] ,e.[hiredate] from [person].[person] p inner join [humanresources].[employee] e on e.[businessentityid] = p.[businessentityid];",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select p.[firstname] ,p.[lastname] ,p.[businessentityid] ,e.[businessentityid] ,e.[hiredate] from [person].[person] p left outer join [humanresources].[employee] e on e.[businessentityid] = p.[businessentityid];",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select p.[firstname] ,p.[lastname] ,p.[businessentityid] ,e.[businessentityid] ,j.[businessentityid] ,e.[hiredate] ,j.[jobcandidateid] from [person].[person] p inner join [humanresources].[employee] e on p.[businessentityid] = e.[businessentityid] full outer join [humanresources].[jobcandidate] j on e.[businessentityid] = j.[businessentityid];",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select students.name, students.surname, students.birthdate from student, borrows where students.studentid=borrows.borrowid;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select sum(freight) as totalfreight, territoryid from [sales].[salesorderheader] group by territoryid;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select top 1 ogrno,name,surname,class from students where class= '10math' order by newid();",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select top(10) [businessentityid] ,[firstname] ,[lastname] ,[modifieddate] from [person].[person];",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "show all entries in title, author, rank, price columns",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "show the list of all the employees depicting their employee_id and names.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "songdf.groupby('genre').count().show()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "spark = sparksession.builder.master('local[1]').appname('sparkbyexamples.com').getorcreate()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "spark session created in spark context",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "spark.conf.set('spark.sql.execution.arrow.pyspark.fallback.enabled','true')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "spark.table('sample_table').write.saveastable('sample_hive_table')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "sparkdf=spark.createdataframe(pandasdf)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "sparksession.builder",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "squared = nums.map(lambda x: x*x).collect()",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "startswith” — “ endswith",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sudo service docker start",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sudo yum install -y docker",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "transfer all the students in 9math class to 10math class",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "truncate table employee;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "update [sales].[currency] set currencycode = 'sql' where currencycode = 'mss';",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "update customers set store_state = 'dl' where store_state = 'ny';",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "update data using update",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "update table_name set column_name_1 = value1, column_name_2 = value2, ... where condition;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "using pyspark to access spark",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "valuesdataframe.na.drop()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "write & save file in .parquet format",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "versionId": "0.1",
+  "name": "MSR",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "phraselists": [],
+  "regex_features": [],
+  "patterns": [],
+  "settings": []
+}
