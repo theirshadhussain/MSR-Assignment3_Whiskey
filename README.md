@@ -5,7 +5,7 @@ This is a MSR study as part of the MSR course 2022 at UniKo, CS department, Soft
 Whiskey
 
 ## Student names: 
-- Aneesa Sulthana Jagaraspalli
+- Aneesa Sultana Jagaraspalli
 - Irshad Hussain Mohammed
 - Pavan Kumar Tokachichu
 
